@@ -1,0 +1,49 @@
+{
+  "kind": "network",
+  "mode": "online",
+  "run_utc": "2026-09-18T15:38:34.388832+00:00",
+  "network_state": {
+    "default_route": "<redacted: a default route was present>",
+    "overlay_interfaces_up": [
+      "<redacted: overlay>"
+    ],
+    "routes": [
+      "<redacted: 15 entries>"
+    ]
+  },
+  "container_env": {
+    "HF_HOME": "/root/.cache/huggingface"
+  },
+  "on_site_subnets": [
+    "127.0.0.0/8",
+    "::1/128",
+    "10.0.0.0/8"
+  ],
+  "sockets": {
+    "error": "watcher produced no output"
+  },
+  "probes": [
+    {
+      "script": "bench_latency.py",
+      "args": [
+        "--runs",
+        "3"
+      ],
+      "returncode": 1,
+      "seconds": 705.1,
+      "stdout_tail": "| Stage | n | p50 ms | p95 ms | max ms |\n|---|---:|---:|---:|---:|\n| ASR | 54 | 181 | 225 | 234 |\n| retrieval | 54 | 93 | 103 | 124 |\n| LLM first token | 54 | 20 | 44 | 483 |\n| TTS first audio | 54 | 553 | 1226 | 1446 |\n| end-to-end first audio | 54 | 1082 | 1766 | 1916 |\n\nTurns over 1.5 s end-to-end first audio: 4/60\n\nRaw JSON: ./results/latency/2026-09-18T153304Z.json\n",
+      "stderr_tail": "\n6 turn(s) did not produce final turn_metrics.\n"
+    },
+    {
+      "script": "bench_bargein.py",
+      "args": [
+        "--runs",
+        "30"
+      ],
+      "returncode": 0,
+      "seconds": 208.1,
+      "stdout_tail": "| Barge-in metric | p50 ms | p95 ms | max ms |\n|---|---:|---:|---:|\n| Acoustic onset → response cancelled | 599 | 901 | 929 |\n| Acoustic onset → last server audio chunk | 521 | 859 | 859 |\n\nSuccessful eligible interruptions: 26/26 (30 scheduled attempts; reply_ended_first: 4, timeout: 0)\n\nRaw JSON: ./results/bargein/2026-09-18T153632Z.json\n",
+      "stderr_tail": "run 1: interrupted offset=500ms cancel=607ms last_chunk=519ms\nrun 2: interrupted offset=1000ms cancel=608ms last_chunk=500ms\nrun 3: interrupted offset=1500ms cancel=609ms last_chunk=601ms\nrun 4: interrupted offset=2000ms cancel=590ms last_chunk=580ms\nrun 5: interrupted offset=3000ms cancel=596ms last_chunk=500ms\nrun 6: interrupted offset=500ms cancel=589ms last_chunk=519ms\nrun 7: interrupted offset=1000ms cancel=929ms last_chunk=859ms\nrun 8: reply_ended_first offset=1500ms cancel=n/ams last_chunk=n/ams\nrun 9: interrupted offset=2000ms cancel=616ms last_chunk=460ms\nrun 10: interrupted offset=3000ms cancel=617ms last_chunk=541ms\nrun 11: reply_ended_first offset=500ms cancel=n/ams last_chunk=n/ams\nrun 12: interrupted offset=1000ms cancel=595ms last_chunk=500ms\nrun 13: interrupted offset=1500ms cancel=594ms last_chunk=480ms\nrun 14: interrupted offset=2000ms cancel=592ms last_chunk=579ms\nrun 15: interrupted offset=3000ms cancel=599ms last_chunk=528ms\nrun 16: interrupted offset=500ms cancel=599ms last_chunk=521ms\nrun 17: interrupted offset=1000ms cancel=607ms last_chunk=500ms\nrun 18: interrupted offset=1500ms cancel=595ms last_chunk=480ms\nrun 19: interrupted offset=2000ms cancel=593ms last_chunk=582ms\nrun 20: reply_ended_first offset=3000ms cancel=n/ams last_chunk=n/ams\nrun 21: interrupted offset=500ms cancel=606ms last_chunk=519ms\nrun 22: interrupted offset=1000ms cancel=605ms last_chunk=500ms\nrun 23: interrupted offset=1500ms cancel=610ms last_chunk=600ms\nrun 24: interrupted offset=2000ms cancel=591ms last_chunk=580ms\nrun 25: interrupted offset=3000ms cancel=596ms last_chunk=523ms\nrun 26: interrupted offset=500ms cancel=587ms last_chunk=523ms\nrun 27: interrupted offset=1000ms cancel=901ms last_chunk=859ms\nrun 28: reply_ended_first offset=1500ms cancel=n/ams last_chunk=n/ams\nrun 29: interrupted offset=2000ms cancel=621ms last_chunk=460ms\nrun 30: interrupted offset=3000ms cancel=616ms last_chunk=541ms\n"
+    }
+  ]
+}

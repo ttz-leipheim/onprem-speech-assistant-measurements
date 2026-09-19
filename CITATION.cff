@@ -1,0 +1,140 @@
+# Citation File Format 1.2.0.
+# `preferred-citation` is the paper. The top-level metadata is the software.
+
+cff-version: 1.2.0
+message: >-
+  Cite the paper for the findings, and this repository as well if you reuse the
+  probes.
+title: >-
+  Probe suite and measurements for a fully on-premises speech assistant
+abstract: >-
+  Measurement scripts and raw result files behind the numbers reported in
+  "Nothing Leaves the Room: Measuring a Fully On-Premises Speech Assistant and
+  Its Failure Modes": latency, interruption reaction, word error rate against
+  mixed noise, phantom-turn filtering, per-query energy, and network
+  confinement.
+type: software
+version: 1.0.0
+date-released: 2026-09-19
+# Code is MIT; the result files, query texts and manifest are CC BY 4.0.
+license:
+  - MIT
+  - CC-BY-4.0
+license-url: https://github.com/ttz-leipheim/onprem-speech-assistant-measurements/blob/main/LICENSE
+repository-code: https://github.com/ttz-leipheim/onprem-speech-assistant-measurements
+url: https://github.com/ttz-leipheim/onprem-speech-assistant-measurements
+keywords:
+  - on-premises speech assistant
+  - barge-in
+  - latency measurement
+  - open-microphone robustness
+  - privacy-preserving deployment
+  - research artifact
+
+authors:
+  - family-names: Siddiqui
+    given-names: Md Khalid
+    affiliation: >-
+      Neu-Ulm University of Applied Sciences (HNU), Technology Transfer Center
+      Smart Production and Logistics, Neu-Ulm, Germany
+    email: md.khalid.siddiqui@hnu.de
+    # orcid: to be added
+  - family-names: Kressel
+    given-names: Jonathan
+    affiliation: >-
+      Neu-Ulm University of Applied Sciences (HNU), Technology Transfer Center
+      Smart Production and Logistics, Neu-Ulm, Germany
+    # orcid: to be added
+  - family-names: Cenk
+    given-names: Gökhan
+    affiliation: >-
+      Neu-Ulm University of Applied Sciences (HNU), Technology Transfer Center
+      Smart Production and Logistics, Neu-Ulm, Germany
+    # orcid: to be added
+  - family-names: May
+    given-names: Gunther
+    affiliation: >-
+      Neu-Ulm University of Applied Sciences (HNU), Technology Transfer Center
+      Smart Production and Logistics, Neu-Ulm, Germany
+    # orcid: to be added
+
+preferred-citation:
+  type: conference-paper
+  title: >-
+    Nothing Leaves the Room: Measuring a Fully On-Premises Speech Assistant and
+    Its Failure Modes
+  year: 2026
+  month: 10
+  collection-title: >-
+    Proceedings of the IADIS International Conference Applied Computing 2026
+  collection-type: proceedings
+  conference:
+    name: >-
+      23rd International Conference on Applied Computing (AC 2026), organised by
+      the International Association for Development of the Information Society
+    location: VIP Executive Entrecampos Hotel & Conference
+    address: Avenida 5 de Outubro 295
+    post-code: 1600-035
+    city: Lisbon
+    country: PT
+    date-start: 2026-10-24
+    date-end: 2026-10-26
+  publisher:
+    name: IADIS Press
+  editors:
+    - family-names: Miranda
+      given-names: Paula
+    - family-names: Isaías
+      given-names: Pedro
+  # Filled in on publication.
+  # isbn:   pending publication
+  # doi:    pending publication
+  # start:  pending publication
+  # end:    pending publication
+  authors:
+    - family-names: Siddiqui
+      given-names: Md Khalid
+    - family-names: Kressel
+      given-names: Jonathan
+    - family-names: Cenk
+      given-names: Gökhan
+    - family-names: May
+      given-names: Gunther
+
+references:
+  - type: article
+    title: >-
+      Software citation principles
+    authors:
+      - family-names: Smith
+        given-names: Arfon M.
+      - family-names: Katz
+        given-names: Daniel S.
+      - family-names: Niemeyer
+        given-names: Kyle E.
+    journal: PeerJ Computer Science
+    year: 2016
+    volume: 2
+    doi: 10.7717/peerj-cs.86
+    notes: The citation convention this file follows.
+  - type: generic
+    title: >-
+      MS-SNSD, a scalable noisy speech dataset and online subjective test
+      framework
+    authors:
+      - family-names: Reddy
+        given-names: Chandan K. A.
+      - family-names: Beyrami
+        given-names: Ebrahim
+      - family-names: Pool
+        given-names: Jamie
+      - family-names: Cutler
+        given-names: Ross
+      - family-names: Srinivasan
+        given-names: Sriram
+      - family-names: Gehrke
+        given-names: Johannes
+    year: 2019
+    notes: >-
+      The noise corpus the robustness probe mixes. Not redistributed; fetched by
+      pinned commit and checked against a manifest.

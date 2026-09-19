@@ -1,0 +1,19 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Neu-Ulm University of Applied Sciences (HNU),
+Technology Transfer Center Smart Production and Logistics
+
+The result files under results/, the query texts in data/queries/prompts.jsonl
+and the manifest in data/noise/noise_manifest.json are licensed under the
+Creative Commons Attribution 4.0 International License.
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the license, and
+indicate if changes were made.
+
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Not covered by this license:
+  The MS-SNSD noise corpus, which is not redistributed here. It is fetched by
+  pinned commit from https://github.com/microsoft/MS-SNSD and carries its own
+  license.

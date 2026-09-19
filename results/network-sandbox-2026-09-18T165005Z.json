@@ -1,0 +1,637 @@
+{
+  "kind": "network",
+  "mode": "sandbox",
+  "run_utc": "2026-09-18T17:06:09.469211+00:00",
+  "network_state_before": {
+    "default_routes_v4": [
+      "<redacted>"
+    ],
+    "default_routes_v6": [],
+    "overlay_interfaces_up": [
+      "<redacted: overlay>"
+    ],
+    "wireless_interfaces": [
+      "<redacted>"
+    ],
+    "wireless_up": [
+      "<redacted>"
+    ],
+    "external_interfaces_with_address": [
+      "<redacted>",
+      "<redacted>"
+    ],
+    "policy_rules": [
+      "<redacted: 7 entries>"
+    ],
+    "routes_v4": [
+      "<redacted: 56 entries>"
+    ]
+  },
+  "network_state_after": {
+    "default_routes_v4": [
+      "<redacted>"
+    ],
+    "default_routes_v6": [],
+    "overlay_interfaces_up": [
+      "<redacted: overlay>"
+    ],
+    "wireless_interfaces": [
+      "<redacted>"
+    ],
+    "wireless_up": [
+      "<redacted>"
+    ],
+    "external_interfaces_with_address": [
+      "<redacted>",
+      "<redacted>"
+    ],
+    "policy_rules": [
+      "<redacted: 7 entries>"
+    ],
+    "routes_v4": [
+      "<redacted: 56 entries>"
+    ]
+  },
+  "egress_check_before": {
+    "1.1.1.1:443": false,
+    "8.8.8.8:53": false,
+    "9.9.9.9:443": false
+  },
+  "egress_check_after": {
+    "1.1.1.1:443": false,
+    "8.8.8.8:53": false,
+    "9.9.9.9:443": false
+  },
+  "sandbox_counters_before": {
+    "armed": true,
+    "rules": [
+      {
+        "packets": 12,
+        "bytes": 720,
+        "drops": true
+      },
+      {
+        "packets": 0,
+        "bytes": 0,
+        "drops": true
+      }
+    ],
+    "packets_total": 12,
+    "enforcing": true
+  },
+  "sandbox_counters_after": {
+    "armed": true,
+    "rules": [
+      {
+        "packets": 408,
+        "bytes": 24480,
+        "drops": true
+      },
+      {
+        "packets": 0,
+        "bytes": 0,
+        "drops": true
+      }
+    ],
+    "packets_total": 408,
+    "enforcing": true
+  },
+  "probe_targets": [
+    "1.1.1.1:443",
+    "8.8.8.8:53",
+    "9.9.9.9:443"
+  ],
+  "container_env": {
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_OFFLINE": "1",
+    "HF_HOME": "/root/.cache/huggingface"
+  },
+  "on_site_subnets": [
+    "127.0.0.0/8",
+    "::1/128",
+    "10.0.0.0/8"
+  ],
+  "sockets": {
+    "pid": 1,
+    "samples": 559,
+    "interval_s": 1.0,
+    "allowed": [
+      "127.0.0.0/8",
+      "::1/128",
+      "10.0.0.0/8"
+    ],
+    "started_unix": 1789750205.8607802,
+    "ended_unix": 1789751155.4456553,
+    "offsite_peers": [],
+    "reachability_probes": [
+      {
+        "t": 0.0,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 0.0,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 0.0,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 30.2,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 30.2,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 30.2,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 60.4,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 60.4,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 60.4,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 90.6,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 90.6,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 90.6,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 120.8,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 120.8,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 120.8,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 151.0,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 151.0,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 151.0,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 181.3,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 181.3,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 181.3,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 211.5,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 211.5,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 211.5,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 241.7,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 241.7,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 241.7,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 271.9,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 271.9,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 271.9,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 302.1,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 302.1,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 302.1,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 332.3,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 332.3,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 332.3,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 362.5,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 362.5,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 362.5,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 392.7,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 392.7,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 392.7,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 422.9,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 422.9,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 422.9,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 453.2,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 453.2,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 453.2,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 483.4,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 483.4,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 483.4,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 513.6,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 513.6,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 513.6,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 543.8,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 543.8,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 543.8,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 574.0,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 574.0,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 574.0,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 604.2,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 604.2,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 604.2,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 634.4,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 634.4,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 634.4,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 664.6,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 664.6,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 664.6,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 694.8,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 694.8,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 694.8,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 725.1,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 725.1,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 725.1,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 755.3,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 755.3,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 755.3,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 785.5,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 785.5,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 785.5,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 815.7,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 815.7,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 815.7,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 845.9,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 845.9,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 845.9,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 876.1,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 876.1,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 876.1,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 906.3,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 906.3,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 906.3,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      },
+      {
+        "t": 936.6,
+        "target": "1.1.1.1:443",
+        "reachable": false
+      },
+      {
+        "t": 936.6,
+        "target": "8.8.8.8:53",
+        "reachable": false
+      },
+      {
+        "t": 936.6,
+        "target": "9.9.9.9:443",
+        "reachable": false
+      }
+    ],
+    "reachability_attempts": 96,
+    "reachability_successes": 0,
+    "reached_off_site": false,
+    "stopped_early": true
+  },
+  "probes": [
+    {
+      "script": "bench_latency.py",
+      "args": [
+        "--runs",
+        "3"
+      ],
+      "returncode": 1,
+      "seconds": 732.3,
+      "stdout_tail": "| Stage | n | p50 ms | p95 ms | max ms |\n|---|---:|---:|---:|---:|\n| ASR | 54 | 181 | 223 | 6471 |\n| retrieval | 53 | 93 | 106 | 128 |\n| LLM first token | 54 | 18 | 21 | 40 |\n| TTS first audio | 54 | 651 | 1002 | 1281 |\n| end-to-end first audio | 54 | 1178 | 1516 | 7357 |\n\nTurns over 1.5 s end-to-end first audio: 3/60\n\nRaw JSON: ./results/latency/2026-09-18T170218Z.json\n",
+      "stderr_tail": "\n6 turn(s) did not produce final turn_metrics.\n"
+    },
+    {
+      "script": "bench_bargein.py",
+      "args": [
+        "--runs",
+        "30"
+      ],
+      "returncode": 0,
+      "seconds": 209.0,
+      "stdout_tail": "| Barge-in metric | p50 ms | p95 ms | max ms |\n|---|---:|---:|---:|\n| Acoustic onset → response cancelled | 603 | 766 | 1737 |\n| Acoustic onset → last server audio chunk | 557 | 737 | 1720 |\n\nSuccessful eligible interruptions: 26/26 (30 scheduled attempts; reply_ended_first: 4, timeout: 0)\n\nRaw JSON: ./results/bargein/2026-09-18T170547Z.json\n",
+      "stderr_tail": "run 1: interrupted offset=500ms cancel=607ms last_chunk=500ms\nrun 2: interrupted offset=1000ms cancel=605ms last_chunk=567ms\nrun 3: interrupted offset=1500ms cancel=608ms last_chunk=578ms\nrun 4: interrupted offset=2000ms cancel=588ms last_chunk=553ms\nrun 5: interrupted offset=3000ms cancel=597ms last_chunk=545ms\nrun 6: interrupted offset=500ms cancel=588ms last_chunk=557ms\nrun 7: interrupted offset=1000ms cancel=1737ms last_chunk=1720ms\nrun 8: reply_ended_first offset=1500ms cancel=n/ams last_chunk=n/ams\nrun 9: interrupted offset=2000ms cancel=614ms last_chunk=595ms\nrun 10: interrupted offset=3000ms cancel=617ms last_chunk=570ms\nrun 11: reply_ended_first offset=500ms cancel=n/ams last_chunk=n/ams\nrun 12: interrupted offset=1000ms cancel=593ms last_chunk=478ms\nrun 13: interrupted offset=1500ms cancel=594ms last_chunk=534ms\nrun 14: interrupted offset=2000ms cancel=593ms last_chunk=535ms\nrun 15: interrupted offset=3000ms cancel=603ms last_chunk=567ms\nrun 16: interrupted offset=500ms cancel=602ms last_chunk=485ms\nrun 17: interrupted offset=1000ms cancel=612ms last_chunk=601ms\nrun 18: interrupted offset=1500ms cancel=594ms last_chunk=545ms\nrun 19: interrupted offset=2000ms cancel=592ms last_chunk=587ms\nrun 20: reply_ended_first offset=3000ms cancel=n/ams last_chunk=n/ams\nrun 21: interrupted offset=500ms cancel=607ms last_chunk=525ms\nrun 22: interrupted offset=1000ms cancel=603ms last_chunk=507ms\nrun 23: interrupted offset=1500ms cancel=608ms last_chunk=605ms\nrun 24: interrupted offset=2000ms cancel=589ms last_chunk=484ms\nrun 25: interrupted offset=3000ms cancel=601ms last_chunk=533ms\nrun 26: interrupted offset=500ms cancel=590ms last_chunk=566ms\nrun 27: interrupted offset=1000ms cancel=766ms last_chunk=737ms\nrun 28: reply_ended_first offset=1500ms cancel=n/ams last_chunk=n/ams\nrun 29: interrupted offset=2000ms cancel=613ms last_chunk=584ms\nrun 30: interrupted offset=3000ms cancel=617ms last_chunk=607ms\n"
+    }
+  ]
+}

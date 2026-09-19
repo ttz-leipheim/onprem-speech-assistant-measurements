@@ -1,0 +1,20 @@
+{"id": "high-flow-nozzle-material", "text": "Aus welchem Material ist die Standardduese des High-Flow-Druckkopfs?"}
+{"id": "abrasive-nozzle", "text": "Welche Duese brauche ich fuer abrasive Filamente?"}
+{"id": "nozzle-cleaning", "text": "Welche Reinigungsmethoden darf ich bei der Duese nicht verwenden?"}
+{"id": "high-temp-max-temp", "text": "Wie heiss wird der Hochtemperatur-Druckkopf?"}
+{"id": "high-temp-nozzle-size", "text": "Welchen Duesendurchmesser hat der Hochtemperatur-Druckkopf?"}
+{"id": "high-temp-material", "text": "Welches schwierige Material kann der Hochtemperatur-Druckkopf drucken?"}
+{"id": "fan-sizes", "text": "Welche Lueftergroessen nutzt der Druckkopf?"}
+{"id": "nozzle-replacement-temperature", "text": "Auf welche Temperatur soll ich die Duese vor dem Wechsel aufheizen?"}
+{"id": "nozzle-replacement-tool", "text": "Welches Werkzeug brauche ich fuer den Duesenwechsel?"}
+{"id": "filament-unload", "text": "Wie entlade ich das Filament am <Modell>?"}
+{"id": "filament-load", "text": "Wie lade ich Filament in den Drucker?"}
+{"id": "first-layer-calibration", "text": "Wie starte ich die Erstschicht-Kalibrierung?"}
+{"id": "bed-leveling", "text": "Wie pruefe ich die Druckbett-Kalibrierung?"}
+{"id": "door-open", "text": "Wann darf ich die Tuer im Betrieb oeffnen?"}
+{"id": "emergency-stop", "text": "Was soll ich im Notfall am Drucker druecken?"}
+{"id": "chamber-temperature", "text": "Wie warm wird die Kammer beim Hochtemperaturdruck?"}
+{"id": "maintenance-interval", "text": "Welche Wartungsschritte sind regelmaessig faellig?"}
+{"id": "cleaning-print-sheet", "text": "Wie reinige ich die Druckplatte richtig?"}
+{"id": "material-drying", "text": "Was muss ich beim Trocknen von Filament beachten?"}
+{"id": "diagnostics", "text": "Wie starte ich die Diagnose am Drucker?"}

@@ -1,0 +1,28 @@
+{
+  "kind": "network-observation",
+  "recorded_utc": "2026-09-18T15:20:18.213813+00:00",
+  "note": "Observed on the deployment as it had been running, before the model cache was set to resolve offline",
+  "peer_reverse_dns": "server-52-222-136-117.fra50.r.cloudfront.net",
+  "tcp_state": "CLOSE_WAIT",
+  "sampling": {
+    "pid": 1,
+    "samples": 179,
+    "interval_s": 1.0,
+    "allowed": [
+      "127.0.0.0/8",
+      "10.0.0.0/8",
+      "::1/128"
+    ],
+    "started_unix": 1789742997.371958,
+    "ended_unix": 1789743178.3096511,
+    "offsite_peers": [
+      {
+        "peer": "52.222.136.117",
+        "port": 443,
+        "samples": 179,
+        "first_seen": 1789742997.3825681,
+        "last_seen": 1789743177.3095124
+      }
+    ]
+  }
+}

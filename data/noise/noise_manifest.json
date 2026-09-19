@@ -1,0 +1,57 @@
+{
+  "dataset": "MS-SNSD",
+  "repository": "https://github.com/microsoft/MS-SNSD",
+  "license": "MIT",
+  "source_commit": "fe61c4ba0d9ac8dd7e23d719cc79f8947e1dc742",
+  "output_dir": "data/noise/audio",
+  "files": [
+    {
+      "label": "ventilation",
+      "source_path": "noise_test/AirConditioner_1.wav",
+      "url": "https://raw.githubusercontent.com/microsoft/MS-SNSD/fe61c4ba0d9ac8dd7e23d719cc79f8947e1dc742/noise_test/AirConditioner_1.wav",
+      "local_path": "data/noise/audio/ventilation/AirConditioner_1.wav",
+      "bytes": 750400,
+      "sha256": "3fe55d7035d7ef2599841738f818dc4463f5ef983eb4b5fefeee153d8caa2110"
+    },
+    {
+      "label": "ventilation",
+      "source_path": "noise_test/AirConditioner_2.wav",
+      "url": "https://raw.githubusercontent.com/microsoft/MS-SNSD/fe61c4ba0d9ac8dd7e23d719cc79f8947e1dc742/noise_test/AirConditioner_2.wav",
+      "local_path": "data/noise/audio/ventilation/AirConditioner_2.wav",
+      "bytes": 723800,
+      "sha256": "82f0e0b3ff00871d5f81466478a953a1164221762779177147750cc3a99c3a7a"
+    },
+    {
+      "label": "machinery",
+      "source_path": "noise_test/VacuumCleaner_1.wav",
+      "url": "https://raw.githubusercontent.com/microsoft/MS-SNSD/fe61c4ba0d9ac8dd7e23d719cc79f8947e1dc742/noise_test/VacuumCleaner_1.wav",
+      "local_path": "data/noise/audio/machinery/VacuumCleaner_1.wav",
+      "bytes": 1109382,
+      "sha256": "594c10d5db0f809b695f90199443b81b799fa1b06c09efcac02c1ebff62fda80"
+    },
+    {
+      "label": "copy_machine",
+      "source_path": "noise_test/CopyMachine_1.wav",
+      "url": "https://raw.githubusercontent.com/microsoft/MS-SNSD/fe61c4ba0d9ac8dd7e23d719cc79f8947e1dc742/noise_test/CopyMachine_1.wav",
+      "local_path": "data/noise/audio/copy_machine/CopyMachine_1.wav",
+      "bytes": 1592644,
+      "sha256": "43ce2b5e660c0d68dce14aed21050b9cd37b717430144f966ec9abdfada4ad61"
+    },
+    {
+      "label": "babble",
+      "source_path": "noise_test/Babble_1.wav",
+      "url": "https://raw.githubusercontent.com/microsoft/MS-SNSD/fe61c4ba0d9ac8dd7e23d719cc79f8947e1dc742/noise_test/Babble_1.wav",
+      "local_path": "data/noise/audio/babble/Babble_1.wav",
+      "bytes": 1953370,
+      "sha256": "d7a64dd995a92f4790308dbff196332585eec502734ac737bfc9e2ac317dacd6"
+    },
+    {
+      "label": "babble",
+      "source_path": "noise_test/Babble_2.wav",
+      "url": "https://raw.githubusercontent.com/microsoft/MS-SNSD/fe61c4ba0d9ac8dd7e23d719cc79f8947e1dc742/noise_test/Babble_2.wav",
+      "local_path": "data/noise/audio/babble/Babble_2.wav",
+      "bytes": 981122,
+      "sha256": "b7f9872b1e4aef0949672d577cdd00132273c2b53efb4a23add549ee0cbbad90"
+    }
+  ]
+}

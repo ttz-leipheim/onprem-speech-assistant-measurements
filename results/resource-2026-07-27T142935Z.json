@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-07-27T14:29:35+00:00",
+  "gpu": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "memory_total_mib": 97887.0
+  },
+  "idle_seconds": 60.0,
+  "sample_interval_s": 1.0,
+  "benchmark_command": "python probes/bench_latency.py --runs 3",
+  "benchmark_result": {
+    "command": "python probes/bench_latency.py --runs 3",
+    "returncode": 0,
+    "elapsed_s": 801.0087040457875,
+    "stdout_tail": "| Stage | n | p50 ms | p95 ms | max ms |\n|---|---:|---:|---:|---:|\n| ASR | 60 | 184 | 223 | 232 |\n| retrieval | 59 | 94 | 103 | 106 |\n| LLM first token | 60 | 21 | 24 | 33 |\n| TTS first audio | 60 | 631 | 1058 | 1244 |\n| end-to-end first audio | 60 | 1159 | 1546 | 1780 |\n\nTurns over 1.5 s end-to-end first audio: 4/60\n\nRaw JSON: ./results/latency/2026-07-27T142934Z.json",
+    "stderr_tail": "",
+    "timed_out": false
+  },
+  "latency_json": "./results/latency/2026-07-27T142934Z.json",
+  "asr_json": [
+    "./results/noise/2026-07-27T141513Z.json"
+  ],
+  "idle_summary": {
+    "samples": 59,
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "memory_total_mib": 97887.0,
+    "memory_used_mib_mean": 62246.0,
+    "memory_used_mib_max": 62246.0,
+    "power_w_mean": 30.550508474576272,
+    "power_w_max": 302.88,
+    "utilization_pct_mean": 1.1864406779661016,
+    "utilization_pct_max": 70.0
+  },
+  "active_summary": {
+    "samples": 785,
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "memory_total_mib": 97887.0,
+    "memory_used_mib_mean": 62249.11592356688,
+    "memory_used_mib_max": 62440.0,
+    "power_w_mean": 108.37182165605095,
+    "power_w_max": 273.86,
+    "utilization_pct_mean": 5.821656050955414,
+    "utilization_pct_max": 98.0
+  },
+  "latency_summary": {
+    "turn_count": 60,
+    "mean_e2e_first_audio_ms": 1137.1333333333334,
+    "p50_e2e_first_audio_ms": 1159.1999999999998,
+    "mean_turn_duration_s": 13.350145067429791
+  },
+  "asr_summary": {
+    "sample_count": 500,
+    "mean_realtime_factor": 17.01283936998002,
+    "median_realtime_factor": 16.896984682715562
+  },
+  "llm_tokens_s": null,
+  "energy_per_query_wh": 0.40188320564719715,
+  "component_vram": [
+    {
+      "component": "full pipeline delta",
+      "memory_mib": 194.0,
+      "source": "active peak minus idle mean, approximate"
+    }
+  ],
+  "notes": [
+    "Component VRAM is approximate unless --component-vram LABEL=MIB values were supplied.",
+    "Cost figures are not derived here; the paper reports energy only."
+  ],
+  "markdown_table": "| Metric | Value | Notes |\n|---|---:|---|\n| GPU | NVIDIA RTX PRO 6000 Blackwell Workstation Edition | total VRAM 97887 MiB |\n| Idle power | 30.6 W | 59 sample(s) |\n| Active power | 108.4 W | peak 273.9 W |\n| Active GPU utilization | 5.8% | peak 98.0% |\n| Active VRAM used | 62440 MiB | peak during benchmark window |\n| VRAM: full pipeline delta | 194 MiB | active peak minus idle mean, approximate |\n| LLM throughput | n/a | LLM server metrics endpoint |\n| ASR speed factor | 16.9x | median audio duration / transcribe time |\n| Mean turn duration | 13.4 s | benchmark wall time per turn when available |\n| Energy per query | 0.4 Wh | active mean power x mean turn duration |"
+}

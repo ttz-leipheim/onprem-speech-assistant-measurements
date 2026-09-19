@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/queries/audio/
+data/noise/audio/
